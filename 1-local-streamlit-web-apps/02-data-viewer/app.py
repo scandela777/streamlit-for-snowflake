@@ -2,7 +2,7 @@ import webbrowser
 import urllib.parse
 import pandas as pd
 
-df = pd.read_csv("data/employees.csv", header=0).convert_dtypes()
+df = pd.read_csv("1-local-streamlit-web-apps/02-data-viewer/data/employees.csv", header=0).convert_dtypes()
 
 edges = ""
 for _, row in df.iterrows():

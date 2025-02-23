@@ -5,7 +5,7 @@ import streamlit as st
 
 st.title("Hierarchical Data Viewer")
 
-df = pd.read_csv("data/employees.csv", header=0).convert_dtypes()
+df = pd.read_csv("1-local-streamlit-web-apps/03-streamlit-web-app/data/employees.csv", header=0).convert_dtypes()
 st.dataframe(df)
 
 edges = ""

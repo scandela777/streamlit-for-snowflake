@@ -14,6 +14,7 @@ for _, row in df.iterrows():
         edges += f'\t"{row.iloc[0]}" -> "{row.iloc[1]}";\n'
 
 d = f'digraph {{\n{edges}}}'
+print(d)
 st.graphviz_chart(d)
 
 #url = f'http://magjac.com/graphviz-visual-editor/?dot={urllib.parse.quote(d)}'

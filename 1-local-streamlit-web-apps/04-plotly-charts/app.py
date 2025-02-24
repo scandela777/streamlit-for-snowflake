@@ -2,10 +2,12 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 
+#Título
 st.title("Hierarchical Data Charts")
 
-df = pd.read_csv("data/employees.csv", header=0).convert_dtypes()
-#st.dataframe(df)
+#load csv
+df = pd.read_csv("1-local-streamlit-web-apps/04-plotly-charts/data/employees.csv", header=0).convert_dtypes()
+#st.dataframe(df) #show Dataframe
 
 labels = df[df.columns[0]]
 parents = df[df.columns[1]]

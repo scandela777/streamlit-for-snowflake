@@ -18,5 +18,5 @@ st.info("this is info")
 st.warning("this is a warning")
 st.success("this is success")
 
-#st.balloons()
-#st.snow()
+st.balloons()
+st.snow()
